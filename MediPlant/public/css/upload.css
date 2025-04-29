@@ -1,0 +1,63 @@
+
+.container {
+    /* max-width: 500px; */
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+input[type="file"],
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+button {
+    background-color: #07a53c;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #078645;
+    color: white;
+}
+
+label span {
+    
+    color:  #808080;
+    font-size: 11px;
+}
+
+.preview{
+    border: 2px solid #ccc;
+    margin-bottom: 20px;
+    width: 250px;
+    height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    object-fit: cover;
+}
+

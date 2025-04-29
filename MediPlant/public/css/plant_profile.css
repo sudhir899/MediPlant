@@ -1,0 +1,21 @@
+.container {
+    width: 90%;
+    margin: 0px;
+    padding: 20px;
+    background-color: #fcf8f5;
+    font-size: 20px;
+    /* border: 2px solid red; */
+}
+
+.plant-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border: 1px solid rgb(53, 53, 199);
+}
+.description {
+    margin: 20px;
+    font-size: 18px;
+    line-height: 1.5;
+    /* border: 2px solid pink; */
+}

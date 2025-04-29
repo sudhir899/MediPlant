@@ -1,0 +1,99 @@
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery a{
+    text-decoration: none;
+    border-radius: 5%;
+    font-size: 16px;
+    color: green;
+}
+.image a:hover{
+    text-decoration: none;
+}
+.image:hover{
+    font-size: 16px;
+    color: green;
+    box-shadow: 0px 5px 7px 5px rgba(15, 77, 15, 0.4);
+    transition: all .5s;
+}
+.image {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+    border: 2px solid #c0c0c0;
+    z-index: 0;
+}
+
+.image img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5%;
+    object-fit: cover;
+}
+
+.options {
+    
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none; 
+    z-index: 1;
+}
+.options a{
+    border-radius: 5px;
+}
+.image:hover .options {
+    display: block; 
+}
+
+.edit-button,
+.delete-button {
+    position: relative;
+    padding: 5px;
+    border: none;
+    background-color: rgb(124, 232, 15);
+    cursor: pointer;
+}
+.edit-button:hover,
+.delete-button:hover {
+    border-radius: 5px;
+    color: #161c27;
+    border: none;
+    background-color: rgb(124, 232, 15);
+    cursor: pointer;
+}
+
+.pagination {
+    margin-top: 20px;
+    font-size: 16px;
+    justify-content: center;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    text-decoration: none;
+    color: #1f1f1f;
+    border: 2px solid green;
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    text-decoration: none;
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+}
+
+
+.pagination .active {
+    background-color: green;
+    color: white;
+    border: 2px solid green;
+    pointer-events: none;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Profile</title>
+    <link rel="stylesheet" href="css\plant_profile.css">
+    <link rel="stylesheet" href="css\menu.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<body>
+    <div class="menu">
+        <img src="img\logo.png" alt="MediPlants">
+       <div class="menu_items">
+       	 <span><a href="/">Home</a></span>
+         <span><a href="upload">Upload</a></span>
+         <span><a href="gallery">Gallery</a></span>
+         <span><a href="contactus">Contact Us</a></span>
+         <!-- <span><a href="login">Login</a></span>|
+         <span><a href="signup">Signup</a></span> -->
+       </div>
+    </div>
+
+    <br>
+    <div class="container">
+        <!-- Plant Image -->
+        <div class="col-sm-4">
+             <img src="./images/<%= details.image %>" alt="Plant Image" class="plant-image">
+        </div>
+        <div class="col-sm-1"></div>
+        <div class="col-sm-7">
+
+            <!-- Plant Names -->
+            <h3 class="heading">Different Names</h3> <hr>
+            <span><i class="fas fa-angle-double-right"></i> Hindi Name: <%= details.hindi_name %></span> <br>
+            <span><i class="fas fa-angle-double-right"></i> English Name: <%= details.english_name %></span> <br>
+            <span><i class="fas fa-angle-double-right"></i> Botanical Name: <%= details.botanical_name %></span> <hr>
+
+               <!-- Diseases Cured -->
+            <h3 class="heading">Diseases Cures</h3> <hr>
+            <% details.disease.forEach(disease => {  %>
+                <span><i class="fas fa-angle-double-right"></i> <%= disease %></span> <br>
+            <% }); %>
+            <hr>
+        </div> 
+    </div>
+    <div class="container">
+
+        <!-- Places Found -->
+        <div class="col-sm-6">
+            <h3 class="heading">Places Found</h3><hr>
+            <% details.places.forEach(place => {  %>
+                <span><i class="fas fa-angle-double-right"></i> <%= place %></span> <br>
+            <% }); %>
+        </div>
+        
+
+        <!-- Useful Parts -->
+        <div class="col-sm-6">
+            <h3 class="heading">Useful Parts</h3><hr>
+            <% details.useful_parts.forEach(part => {  %>
+                <span><i class="fas fa-angle-double-right"></i> <%= part %></span> <br>
+            <% }); %>
+        </div>
+    </div>
+
+            <!-- Description -->
+    <div class="container">
+        <h3 class="heading">Description</h3><hr>
+        <p class="description">
+            <%= details.description %>
+        </p>
+    </div>
+    <br>
+   
+
+
+
+<center class=" social">
+    <h4>FOLLOW US</h4>
+    <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.twitter.com/"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.gmail.com/"><i class="fab fa-google-plus-g"></i></a><br><br>
+</center>
+
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
+</body>
+</html>
+

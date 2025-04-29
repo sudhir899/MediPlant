@@ -1,0 +1,16 @@
+.pad40{
+	padding: 40px 0px; 
+}
+.heading{
+	text-align: center;
+	font-weight: 600;
+	color: #012f55;
+	margin-bottom: 5px;
+}
+.contact{
+	font-size: 1.4em;
+	margin-top: 10px;
+	background: #f5f5f5;
+	text-align: center;
+	padding: 10px 0px;
+}

@@ -10,5 +10,3 @@ mongoose.connect(process.env.MONGO_URI,{
 })
 
 
-
-//mongodb+srv://Sudhir123:Sudhir123@cluster0.su2up.mongodb.net
